@@ -1,0 +1,28 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #353535;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.container h1 {
+    color: #fff;
+    font-size: 92px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffc107 10%, #03a9f4, #e91e63);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
